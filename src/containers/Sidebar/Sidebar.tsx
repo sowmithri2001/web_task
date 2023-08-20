@@ -6,7 +6,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setTab, setWatchlists } from '../../redux/tabSliceSlice'
 
-const Sidebar = (props: any) => {
+const Sidebar = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setWatchlists(data.watchlists)) // Set watchlists from JSON data
