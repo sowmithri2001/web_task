@@ -3,8 +3,8 @@ import {createSlice} from "@reduxjs/toolkit"
 const tabSlice = createSlice({
     name: 'tab',
     initialState: {
-      currentTab: 0, // Initial tab index
-      watchlists: [[]], // Array of watchlists
+      currentTab: 0,
+      watchlists: [[]],
     },
     reducers: {
       setTab: (state, action) => {

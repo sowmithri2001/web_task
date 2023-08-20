@@ -9,7 +9,7 @@ import { setTab, setWatchlists } from '../../redux/tabSliceSlice'
 const Sidebar = () => {
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(setWatchlists(data.watchlists)) // Set watchlists from JSON data
+    dispatch(setWatchlists(data.watchlists))
   }, [dispatch])
   const tabList = useSelector((state: any) => state.tab.watchlists)
   const handleClick = (tabIndex: number) => {
